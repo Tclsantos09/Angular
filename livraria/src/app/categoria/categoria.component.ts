@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CategoriasService } from '../categorias.service';
 
 @Component({
   selector: 'app-categoria',
@@ -6,20 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./categoria.component.scss']
 })
 export class CategoriaComponent implements OnInit {
-
-  categoriaLivro: string;
-  idLivro: string;
-  categorias = [
-  ];
-
-  constructor() { }
+  
+  constructor(private categorias: CategoriasService) { }
 
   ngOnInit() {
   }
-  adicionarCategoria(){
-    this.categorias.push({
-      id: this.idLivro, nome: this.categoriaLivro
-    });
+  
+  public leiaDaCategoria(){
+    return this.categorias.getCategorias();
   }
 
 }
