@@ -1,0 +1,10 @@
+<div class="container">
+    <h1 class="titulo">Filas</h1>
+    <ul class="filas">
+        <li *ngFor="let item of leiaDaFila()">
+            {{item.id}} -
+            {{item.nome}}
+        </li>
+    </ul>
+</div>
+<app-criar-fila></app-criar-fila>
