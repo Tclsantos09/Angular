@@ -8,9 +8,6 @@ import { FilasService } from '../filas.service';
 })
 export class FilasComponenteComponent implements OnInit {
 
-  nomeFila: string;
-  idFila: number;
-
   constructor(private filas: FilasService) { 
   }
 
@@ -19,12 +16,5 @@ export class FilasComponenteComponent implements OnInit {
 
   public leiaDaFila(){
     return this.filas.getFilas();
-  }
-
-  adicionarFila(){
-    // this.filas.push({
-    //   id: this.idFila, nome: this.nomeFila
-    // });
-    // console.log('Cliquei');
   }
 }
