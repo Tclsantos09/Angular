@@ -1,0 +1,91 @@
+https://stackblitz.com/
+
+responsabilidade
+-se preocupar com a performance no client-side
+-desenvolver codigo limpo e bem documentado
+-geralmente trabalha com a equipe do design
+
+importancia
+-80% do tempo do carregamento de uma pagina é no front
+-as interfaces vem ficando complexas e detalhadas
+-o visual é a primeira coisa que observamos em um site
+
+angular
+é um framework open source, usado em app web e mobile, usando 
+como base javascript. Mantido pelo Google e Microsoft.
+
+AngularJs x Angular
+AngularJs não é angular 
+
+blocos principais
+-compenentes
+-diretivas (controladores de templates)
+-provider (onde trabalha a regra de negocio)
+-data binding (pega um dado e imprime no html)
+-roteamento (navegação do site)
+
+Compenentes
+bloco html; css; classe que gerencia as propriedades e 
+comportamentos
+
+Serviços
+Logica de negocio; comunicação http, storage e etc.
+
+Rotas
+utiliza o conceito de SPA(single page application);
+responsavel pela navegação
+
+tsc main.ts
+tsc = Typescript
+
+angular.cli
+aplicação 
+utiliza ng 
+
+criar novo projeto
+ng new hello-word-angular
+
+e2e
+teste automatizado
+
+.editorconfig
+regra visual do app
+
+.gitignore
+o que não vai pro git
+
+angular.json
+arquivo de configuração do nosso projeto
+aot:false otimização
+assets arquivo estatico
+favicon icone 
+
+node
+vscode
+npm repositório de pacotes https://www.npmjs.com/
+
+criar componente
+ng generator component nomedocomponente ou ng g c nomedocomponente 
+
+' parametro
+" declaração de variavel 
+
+()quando vai receber um evento
+
+div>ul>li*8
+
+https://www.madewithangular.com/
+
+ctrl+a ctrl+k ctrl+f
+para identar
+
+ctrl + ;
+comentar
+
+componente não trata regra de negócio
+
+criar um serviço
+ng generate service nome OU ng g s nome
+
+construtor é o metodo que constroi objetos na pagina, construtor é 
+executado automaticamente sempre
