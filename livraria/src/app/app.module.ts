@@ -5,16 +5,24 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CriarCategoriaComponent } from './criar-categoria/criar-categoria.component';
+import { AppRoutingModule } from './app-routing.module';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { HeaderComponent } from './header/header.component';
+import { LivrosComponent } from './livros/livros.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoriaComponent,
-    CriarCategoriaComponent
+    CriarCategoriaComponent,
+    NotfoundComponent,
+    HeaderComponent,
+    LivrosComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

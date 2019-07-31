@@ -1,8 +1,7 @@
 <div class="container">
     <h1 class="titulo">Categorias</h1>
-    <app-criar-categoria></app-criar-categoria>
     <ul class="categorias">
-        <li *ngFor="let item of leiaDaCategoria()">
+        <li *ngFor="let item of leiaDaCategoria()" [routerLink]="['/livros', item.id]">
             {{item.id}} -
             {{item.categoria}}
         </li>

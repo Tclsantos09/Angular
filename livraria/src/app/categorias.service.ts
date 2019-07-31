@@ -6,7 +6,12 @@ import { Categoria } from './model/categoria';
 })
 export class CategoriasService {
 
-  categorias: Categoria[] = [];
+  categorias: Categoria[] = [
+    {id: 1, categoria: 'Romance', ativo: true, slug: 'romance'},
+    {id: 2, categoria: 'Aventura', ativo: true, slug: 'aventura'},
+    {id: 3, categoria: 'Infantil', ativo: true, slug: 'infantil'},
+    {id: 4, categoria: 'Terror', ativo: false, slug: 'terror'}
+  ];
 
   constructor() { }
 

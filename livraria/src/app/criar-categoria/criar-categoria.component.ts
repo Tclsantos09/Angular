@@ -18,6 +18,7 @@ export class CriarCategoriaComponent implements OnInit {
   adicionarCategoria(){
     console.log('Nome: ', this.categoriaLivro);
     this.categoria.adicionaCategoria({id: this.categoria.nextId(), categoria: this.categoriaLivro});
+    this.categoriaLivro = "";
   }
 
 }
