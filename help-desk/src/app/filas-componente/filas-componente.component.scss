@@ -1,6 +1,7 @@
 .container{
     text-align: center;
     max-width: 50%;
+    margin: 0 auto;
 }
 
 .titulo{
@@ -13,13 +14,14 @@
 
     li{
         padding: .3em;
-        background: gray;
+        background: white;
         margin-bottom: 2px;
-        color: white;
+        color: gray;
         cursor: pointer;
+        border: 1px solid rgba(141, 141, 141, 0.548);
     }
 
-    li:hover{
+    a:hover{
         color: blue;
     }
 }
