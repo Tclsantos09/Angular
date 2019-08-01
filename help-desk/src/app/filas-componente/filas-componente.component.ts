@@ -17,4 +17,16 @@ export class FilasComponenteComponent implements OnInit {
   public leiaDaFila(){
     return this.filas.getFilas();
   }
+
+  public incluiNaFila():void {
+    alert('Incluiu');
+  }
+
+  public deletaNaFila():void {
+    alert('Deletou');
+  }
+
+  public nada():void {
+    alert('nada');
+  }
 }

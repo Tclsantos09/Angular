@@ -181,4 +181,14 @@ export class ChamadosService {
     return this.chamados.find((item) => item.id === id_fila);
   }
 
+  public adicionaFila(itemChamado: Chamado): void{
+    this.chamados.push(itemChamado);
+  }
+
+  nextId(): number{
+    let id: number;
+    id = this.chamados.length + 1;
+    return id;
+  }
+
 }

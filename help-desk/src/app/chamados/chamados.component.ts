@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChamadosService } from '../chamados.service';
 import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-chamados',
@@ -10,7 +11,8 @@ import { ActivatedRoute } from '@angular/router';
 export class ChamadosComponent implements OnInit {
 
   constructor(private chamados: ChamadosService,
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute,
+    private location: Location) { }
 
   ngOnInit() {
     let id_categoria = this.route.snapshot.params['id'];
@@ -20,6 +22,10 @@ export class ChamadosComponent implements OnInit {
     let id_categoria = this.route.snapshot.params['id'];
     // com o + a string vira number
     return this.chamados.getChamados(+id_categoria);
+  }
+
+  public voltar(){
+    this.location.back();
   }
 
 }

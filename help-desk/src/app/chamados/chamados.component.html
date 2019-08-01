@@ -20,4 +20,8 @@
             </tr>
         </tbody>
     </table>
+    <app-botao texto="Voltar" (click)="voltar()"></app-botao>
+    <a [routerLink]="['/chamados/criar-chamado']">
+        <app-botao texto="Criar Chamado"></app-botao>
+    </a>
 </div>

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { FilasComponenteComponent } from './filas-componente/filas-componente.component';
@@ -11,6 +11,9 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { HeaderComponent } from './header/header.component';
 import { ChamadosComponent } from './chamados/chamados.component';
 import { DetalheChamadoComponent } from './detalhe-chamado/detalhe-chamado.component';
+import { BotaoComponent } from './botao/botao.component';
+import { CriarChamadoComponent } from './criar-chamado/criar-chamado.component';
+import { CriarChamado2Component } from './criar-chamado2/criar-chamado2.component';
 
 @NgModule({
   declarations: [
@@ -21,11 +24,15 @@ import { DetalheChamadoComponent } from './detalhe-chamado/detalhe-chamado.compo
     NotfoundComponent,
     HeaderComponent,
     ChamadosComponent,
-    DetalheChamadoComponent
+    DetalheChamadoComponent,
+    BotaoComponent,
+    CriarChamadoComponent,
+    CriarChamado2Component
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
